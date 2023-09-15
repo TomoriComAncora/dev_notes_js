@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dev Notes</title>
+    <title>DevNotes</title>
     <!-- bootstrap icons -->
     <link
       rel="stylesheet"
@@ -13,6 +13,27 @@
     <script src="js/scripts.js" defer></script>
   </head>
   <body>
-    <h1>Teste</h1>
+    <header>
+      <h1>DevNotes</h1>
+      <div id="search-container">
+        <i class="bi bi-search"></i>
+        <input type="text" id="search-input" placeholder="Busque sua nota">
+      </div>
+      <button id="export-notes">
+        Exportar CSV <i class="bi bi-download"></i>
+      </button>
+    </header>
+    <div id="add-notes-container">
+      <input type="text" id="add-notes-input" placeholder="O que deseja anotar?">
+      <button class="add-note"><i class="bi bi-plus-lg"></i></button>
+    </div>
+    <div id="notes-container">
+      <div class="notes">
+        <textarea placeholder="Adicione algum texto"></textarea>
+        <i class="bi bi-pin"></i>
+        <i class="bi bi-x-lg"></i>
+        <i class="bi bi-file-earmark-plus"></i>
+      </div>
+    </div>
   </body>
 </html>
