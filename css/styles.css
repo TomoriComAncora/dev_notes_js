@@ -130,7 +130,7 @@ header {
   font-size: 1rem;
   padding: 0.2rem;
   transition: 0.4s;
-  color: #555;
+  color: #999;
   cursor: pointer;
   opacity: 0;
 }
