@@ -69,7 +69,22 @@ const createNote = (id, content, fixed) => {
     element.classList.add("fixed");
   }
 
+  function updateNotes(id, noteContent){
+    const notes = getNotes();
+
+    const targetNotes = notes.filter((note) => note.id === id)[0];
+
+    targetNotes.content = noteContent;
+
+    saveNotes(notes);
+  }
+
   // Eventos do elemento
+  element.querySelector("textarea").addEventListener("keyup", (e)=>{
+    const noteContent = e.target.value;
+
+    updateNotes(id, noteContent);
+  })
   element.querySelector(".bi-pin").addEventListener("click", () => {
     toggleFixNote(id);
   });
