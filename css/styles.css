@@ -163,4 +163,21 @@ header {
   #search-input{
     width: 100%;
   }
+
+  #add-notes-container{
+    width: 100%;
+    padding: 0 2rem;
+  }
+
+  #notes-container{
+    grid-template-columns: repeat(auto-fill, 100%);
+  }
+}
+
+@media(max-width: 780px){
+  header{
+    width: 100%;
+    gap: 1rem;
+  }
+
 }
